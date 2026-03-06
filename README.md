@@ -32,6 +32,14 @@ Competitive programmers often lose track of their past solutions.
 This tool automatically downloads and organizes all accepted submissions from Beecrowd so they can be stored locally or uploaded to GitHub.
 
 ---
+
+## 🎬 Demo
+
+Example of the downloader in action:
+
+![Demo](demo.gif)
+
+---
 ## ✨ Features
 
 - 🔐 Automatic Beecrowd login
