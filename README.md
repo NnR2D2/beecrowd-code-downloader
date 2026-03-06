@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # URI-Code-Downloader
 
 Download all your URI Online Judge source codes and upload to GitHub with simple steps.
@@ -51,3 +52,6 @@ Download all your URI Online Judge source codes and upload to GitHub with simple
 
 ## Authors
 * **Luan Simões - Snizi**
+=======
+# beecrowd-code-downloader
+>>>>>>> 86984fc24aa7c8d92d273421b213922f3443fc74
