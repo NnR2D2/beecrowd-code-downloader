@@ -16,10 +16,10 @@ def login(driver):
     # 2. Modern Selectors
     # Beecrowd uses ID or NAME for these fields
     email_field = wait.until(EC.presence_of_element_located((By.NAME, "email")))
-    email_field.send_keys("nnroy94@gmail.com")
+    email_field.send_keys("Your_email_here")
 
     password_field = driver.find_element(By.NAME, "password")
-    password_field.send_keys("Beecrowd@01")
+    password_field.send_keys("Your_password_here")
 
      # ... after entering email and password ...
 
