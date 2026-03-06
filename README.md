@@ -1,15 +1,37 @@
 # 🚀 Beecrowd Code Downloader
+A Python tool that automatically downloads and organizes your Beecrowd accepted submissions.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![Selenium](https://img.shields.io/badge/Selenium-Automation-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+
 
 Automatically download all your **Beecrowd (URI Online Judge)** accepted submissions, organize them by **programming language**, and optionally upload them to **GitHub**.
 
 This tool logs into your Beecrowd account, scrapes your submission pages, downloads the source code for each submission, and stores them locally in a structured folder format.
 
 ---
+## 📚 Table of Contents
 
+- [Purpose](#-purpose)
+- [Features](#-features)
+- [Folder Structure](#-folder-structure)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
+- [Running the Script](#-running-the-script)
+- [Setup Credentials](#-setup-credentials)
+- [Supported Languages](#-supported-languages)
+- [Upload to GitHub](#-optional-upload-to-github)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+
+---
+## 🎯 Purpose
+
+Competitive programmers often lose track of their past solutions.  
+This tool automatically downloads and organizes all accepted submissions from Beecrowd so they can be stored locally or uploaded to GitHub.
+
+---
 ## ✨ Features
 
 - 🔐 Automatic Beecrowd login
@@ -31,15 +53,15 @@ After downloading, files will look like:
 URI-Source-Codes/
 │
 ├── C++
-│ ├── 1000.cpp
-│ ├── 1029_1.cpp
-│ └── 1029_2.cpp
+│   ├── 1000.cpp
+│   ├── 1029_1.cpp
+│   └── 1029_2.cpp
 │
 ├── Python
-│ └── 1001.py
+│   └── 1001.py
 │
 └── Java
-└── 1002.java
+    └── 1002.java
 ```
 
 Files are grouped by **language** and named by **problem ID**.
@@ -76,7 +98,7 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-▶ Running the Script
+## ▶ Running the Script
 
 Run the script:
 ```bash
@@ -88,7 +110,7 @@ Steps:
 
 2. Log in to Beecrowd
 
-3. Complete "Verify you are human" if shown
+3. Complete the "Verify you are human" check if it appears.
 
 4. The script navigates through all submission pages
 
@@ -97,9 +119,9 @@ Steps:
 ## 🔐 Setup Credentials
 
 Before running the script, open login.py and add your Beecrowd credentials:
-```
-email_field.send_keys("Your_email_here")\
-password_field.send_keys("Your_password_here")
+```python
+email_field.send_keys("your_email_here")
+password_field.send_keys("your_password_here")
 ```
 Then run:
 ```bash
@@ -185,7 +207,7 @@ Docker support
 
 ## 👨‍💻 Author
 
-NnR2D2
+**NnR2D2**
 
-GitHub:
+GitHub:  
 https://github.com/NnR2D2
