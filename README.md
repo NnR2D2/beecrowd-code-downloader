@@ -1,4 +1,8 @@
-# Beecrowd Code Downloader 🚀
+# 🚀 Beecrowd Code Downloader
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Selenium](https://img.shields.io/badge/Selenium-Automation-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 Automatically download all your **Beecrowd (URI Online Judge)** accepted submissions, organize them by **programming language**, and optionally upload them to **GitHub**.
 
@@ -23,6 +27,7 @@ This tool logs into your Beecrowd account, scrapes your submission pages, downlo
 
 After downloading, files will look like:
 
+```
 URI-Source-Codes/
 │
 ├── C++
@@ -31,11 +36,11 @@ URI-Source-Codes/
 │ └── 1029_2.cpp
 │
 ├── Python
-│ ├── 1001.py
+│ └── 1001.py
 │
 └── Java
 └── 1002.java
-
+```
 
 Files are grouped by **language** and named by **problem ID**.
 
@@ -47,6 +52,15 @@ Files are grouped by **language** and named by **problem ID**.
 - Google Chrome
 - ChromeDriver (matching your Chrome version)
 
+Download ChromeDriver:
+
+https://chromedriver.chromium.org/downloads
+
+Place it:
+
+- **Windows:** inside the project folder  
+- **Linux / Mac:** inside your `PATH` or project folder
+
 ---
 
 ## ⚙ Installation
@@ -56,129 +70,122 @@ Clone the repository:
 ```bash
 git clone https://github.com/NnR2D2/beecrowd-code-downloader.git
 cd beecrowd-code-downloader
+```
 
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
-Download ChromeDriver:
-
-https://chromedriver.chromium.org/downloads
-
-Place it:
-
-Windows: inside the project folder
-
-Linux/Mac: inside PATH or project folder
-
+```
 ▶ Running the Script
-python main.py
 
+Run the script:
+```bash
+python main.py
+```
 Steps:
 
-1. Script opens Chrome
+1. The script opens Chrome
 
 2. Log in to Beecrowd
 
 3. Complete "Verify you are human" if shown
 
-4. Script downloads all your submissions
+4. The script navigates through all submission pages
 
-5. Files are saved into URI-Source-Codes
+5. Your source files are saved into URI-Source-Codes
 
-🌍 Supported Languages
+## 🔐 Setup Credentials
+
+Before running the script, open login.py and add your Beecrowd credentials:
+```
+email_field.send_keys("Your_email_here")\
+password_field.send_keys("Your_password_here")
+```
+Then run:
+```bash
+python main.py
+```
+## 🌍 Supported Languages
 
 The downloader currently supports:
 
-C
+* C
 
-C99
+* C99
 
-C++
+* C++
 
-C++17
+* C++17
 
-C++20
+* C++20
 
-C#
+* C#
 
-Java
+* Java
 
-JavaScript
+* JavaScript
 
-Python
+* Python
 
-Go
+* Go
 
-Ruby
+* Ruby
 
-Rust
+* Rust
 
-Swift
+* Swift
 
-TypeScript
+* TypeScript
 
-Kotlin
+* Kotlin
 
-Lua
+* Lua
 
-PHP
+* PHP
 
-Scala
+* Scala
 
-Julia
+* Julia
 
-Dart
+* Dart
 
-Haskell
+* Haskell
 
-OCaml
+* OCaml
 
-Pascal
+* Pascal
 
-PostgreSQL
+* PostgreSQL
 
-R
+* R
 
-Elixir
+* Elixir
 
-Clojure
+* Clojure
 
-Adding new languages only requires updating the language-extension mapping.
+Adding support for new languages only requires updating the **language-extension mapping**.
 
-☁ Optional: Upload to GitHub
+## ☁ Optional: Upload to GitHub
 
 After downloading all files, the script can automatically upload them to a GitHub repository.
 
-You will be prompted to provide a GitHub Personal Access Token.
+You will be prompted to provide a **GitHub Personal Access Token**.
 
-🧠 Future Improvements
+## 🧠 Future Improvements
 
-Faster hybrid scraper (Selenium + Requests)
+Faster **hybrid scraper (Selenium + Requests)**
 
 Parallel downloads
 
-Support for Codeforces / AtCoder / UVA
+Support for **Codeforces / AtCoder / UVA**
 
 CLI options (--upload, --judge)
 
 Docker support
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 NnR2D2
 
 GitHub:
 https://github.com/NnR2D2
-
-
----
-
-## After replacing README
-
-Run:
-
-```bash
-git add README.md
-git commit -m "Fix README merge conflict and add modern README"
-git push
